@@ -1011,9 +1011,16 @@ border: 0;
 /*форма модальное окно*/
 
 textarea {
+  display: block;
   resize: none;
+  justify-content: center;
+  align-items: center;
+ 
   width: 100%;
   outline: none;
+
+  margin: 12px, 16px;
+
 }
 
 .call-form {
@@ -1045,6 +1052,9 @@ margin-bottom: 4px;
 }
 
 .form-input {
+  display: block;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -1093,6 +1103,9 @@ margin-bottom: 30px;
 }
 
 .form-policy {
+display: block;
+justify-content: center;
+align-items: center;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
@@ -1151,10 +1164,29 @@ color: rgba(117, 117, 117, 0.5);
 
 .form-icon {
   position: absolute;
-  top: 50%;
-  left: 10px;
+  top: 65%;
+  left: 16px;
 
   transform: translateY(-40%);
+}
+
+.checkbox:checked + .checkbox-icon {
+ fill: var(--accent-color);
+ outline: 2px solid salmon;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--background-color-secondary);
 }
 
 /*Скролл*/
