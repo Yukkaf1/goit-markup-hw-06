@@ -1198,6 +1198,8 @@ justify-content: center;
   background-size: contain;
   background-origin: content-box;
   object-position: center;
+  background-repeat: no-repeat;
+  
 }
 
 
@@ -1207,6 +1209,8 @@ justify-content: center;
   background-size: contain;
   background-origin: content-box;
   background-color: var(--accent-color);
+  border-radius: 2px;
+  
 
 }
 
