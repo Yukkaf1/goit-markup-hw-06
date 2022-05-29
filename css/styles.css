@@ -1170,14 +1170,7 @@ color: rgba(117, 117, 117, 0.5);
   transform: translateY(-40%);
 }
 
-.checkbox:checked + .checkbox-icon {
- fill: var(--accent-color);
- outline: 2px solid salmon;
- background-color: #2196F3;
-
- background-image: url(../images/icon/check1.svg);
- background-size: contain;
-}
+/**Checkbox**/
 
 .checkbox {
   -webkit-appearance: none;
@@ -1186,14 +1179,40 @@ color: rgba(117, 117, 117, 0.5);
   position: absolute;
 }
 
+.checkbox-label {
+display: block;
+align-items: center;
+justify-content: center;
+}
+
+
 .checkbox-icon {
   display: inline-block;
+  align-items: center;
+  margin-right: 7px;
   width: 16px;
   height: 15px;
-  background-color: var(--background-color-secondary);
-  background-origin: content-box;
+  background-image: url(../images/icon/check0.svg);
   
+  background-color: transparent;
+  background-size: contain;
+  background-origin: content-box;
+  object-position: center;
 }
+
+
+.checkbox:checked + .checkbox-icon {
+  background-image: url(../images/icon/check1.svg);
+
+  background-size: contain;
+  background-origin: content-box;
+  background-color: var(--accent-color);
+
+}
+
+
+
+
 
 /*Скролл*/
 
